@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="autor" content="Martin Friščić" />
+    <meta name="opis" content="h1, map, title" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon" href="/materijali/ikona_stranice.jpg" />
+    <link rel="stylesheet" href="./css/mfriscic20.css" />
+
+    <link rel="stylesheet" href="./css/mfriscic20_responzivni_dizajn.css" />
+    <link rel="stylesheet" href="./css/mfriscic20_ispis.css" />
+
+    <title>Škola gitare</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="prijava.html" class="prijava prijavaTekst">Prijava</a>
+      <div class="cookie_podaci"></div>
+      <a href="" class="odjava">Odjava</a>
+
+     
+
+      <button class="promjena_stila">Promjena stila</button>
+
+      <nav class="nav">
+        <ul class="traka">
+          <li>
+            <a href="./obrazac.html" class="nav_element">Stranica za obrazac</a>
+          </li>
+
+          <li>
+            <a href="./ostalo/kreativna.html" class="nav_element"
+              >Kreativna stranica</a
+            >
+          </li>
+
+          <li>
+            <a href="./ostalo/multimedija.html" class="nav_element"
+              >Stranica za multimediju</a
+            >
+          </li>
+
+          <li><a href="./ostalo/o_autoru.html" class="nav_element" >Stranica o autoru</a></li>
+
+          <li><a href="./podaci/popis.html" class="nav_element">Popis</a></li>
+        </ul>
+      </nav>
+
+    
+    </header>
+  
+
+    <main>
+      <div>
+        <figure>
+          <img
+            src="./materijali/les_paul.jpg"
+            alt="Gibson les paul"
+            usemap="#oblici"
+            height="600"
+            width="800"
+            id="glavna_slika"
+            class="animacija_slike"
+          />
+          <figcaption id="fgcptn">Gibson Les Paul</figcaption>
+        </figure>
+
+        <map name="oblici">
+          <area
+            class="pravokutnik"
+            id="prek_mene"
+            shape="rect"
+            coords="0,3,223,262"
+            href="./ostalo/multimedija.html#clanak_s_videima"
+            alt="poveznica"
+          />
+          <area
+            shape="circle"
+            coords="400,250,100"
+            href="./ostalo/multimedija.html#clanak_sa_slikama"
+            alt="poveznica"
+            class="krug"
+          />
+          <area
+            shape="poly"
+            coords="500,400,500,450,510,600,500,650,450,600,400,510,380,350"
+            href="./ostalo/multimedija.html#clanak_sa_zvukom"
+            alt="poveznica"
+            class="mnogokut"
+          />
+        </map>
+      </div>
+
+      <p>
+        Na slici je prikazana gitara Gibson Les Paul. Jedna je od najpoznatijih
+        gitara u svijetu rock glazbe. Neki od najpoznatijih korisnika koji su
+        koristili ovakvu gitaru su Slash, Jimmy Page, Gary Moore itd. Poznata je
+        po svojem karakterističnom zvuku, ali i po svojoj velikoj masi.
+        Obilježila je svijet glazbe.
+      </p>
+
+ 
+
+      <p>&copy; <a href="mailto:mfriscic20@foi.hr">MARTIN FRIŠČIĆ,</a> 2022.</p>
+    </footer>
+
+    <script src="./js/mfriscic20.js"></script>
+  </body>
+</html>

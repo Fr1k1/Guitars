@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="autor" content="Martin Friščić" />
+    <meta name="opis" content="option, optgroup, button" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mfriscic20.css" />
+    <link rel="stylesheet" href="./css/mfriscic20_responzivni_dizajn.css" />
+    <link rel="stylesheet" href="./css/mfriscic20_ispis.css" />
+    <link rel="icon" type="image/icon" href="/materijali/ikona_stranice.jpg" />
+
+    <title>Obrazac za dodavanje sadržaja</title>
+  </head>
+  <body>
+    <header id="zaglavlje">
+      <h1>Obrazac za unos podataka</h1>
+
+      <noscript>Vaš Web preglednik ne podržava JavaScript!</noscript>
+      <a href="./index.html" class="nav_element">
+        <img
+          src="./materijali/logo.png"
+          alt="logo stranice"
+          height="100"
+          width="75"
+          id="glavni_logo"
+      /></a>
+      <br /><br />
+      <a href="./prijava.html" class="prijava prijavaTekst">Prijava</a>
+      <a href="" class="odjava">Odjava</a>
+      <div class="cookie_podaci"></div>
+
+      <h2 class="izbornik_txt">Izbornik</h2>
+
+      <nav class="nav">
+        <ul class="traka">
+          <li>
+            <a href="./index.html" class="nav_element">Početna stranica</a>
+          </li>
+
+          <li>
+            <a href="./ostalo/kreativna.html" class="nav_element"
+              >Kreativna stranica</a
+            >
+          </li>
+
+          <li>
+            <a href="./ostalo/multimedija.html" class="nav_element"
+              >Stranica za multimediju</a
+            >
+          </li>
+
+          <li>
+            <a href="./ostalo/o_autoru.html" class="nav_element"
+              >Stranica o autoru</a
+            >
+          </li>
+
+          <li><a href="./podaci/popis.html" class="nav_element">Popis</a></li>
+        </ul>
+
+        <br />
+        <br />
+      </nav>
+
+      <button class="promjena_stila">Promjena stila</button>
+    </header>
+
+    <h2>Obrazac za prijavu na radionicu sviranja gitare</h2>
+
+
+    <form
+      id="obrazac"
+      class="animacija_forma"
+      novalidate
+      method="POST"
+      action="https://spider.foi.hr/OWT/materijali/ispis_forme.php"
+    >
+      <div class="prvi_fieldset">
+        <fieldset>
+          <legend class="legenda">Osoba</legend>
+          <h3>Osobni podaci</h3>
+
+          <label for="ime_prezime">Ime i prezime:</label>
+          <input
+            type="text"
+            required
+            id="ime_prezime"
+            name="ime_prezime"
+            placeholder="Ime i prezime"
+          />
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <input type="text" required id="email" name="email" />
+          <br />
+          <br />
+          <label for="telefon">Broj telefona:</label>
+          <input type="tel" required id="telefon" name="telefon" />
+          <br /><br />
+
+          <label for="datum_rodenja">Datum rođenja</label>
+          <input type="date" name="datum_rodenja" id="datum_rodenja" />
+          <br />
+          <br />
+
+          <label for="motivacija"
+            >Motivacija za prijavu na radionicu sviranja:</label
+          >
+          <br />
+          <textarea
+            name="motivacija"
+            id="motivacija"
+            cols="40"
+            rows="10"
+            maxlength="1000"
+          ></textarea>
+          <br />
+
+          <label for="razina_motivacije">Razina motivacije</label>
+          <input
+            type="range"
+            name="razina_motivacije"
+            id="razina_motivacije"
+            value="5"
+            min="1"
+            max="10"
+          />
+          <br /><br />
+
+          <label for="dob">Unesite svoju dob</label>
+
+          <input
+            type="number"
+            min="1"
+            max="100"
+            required
+            value="1"
+            id="dob"
+            name="dob"
+            class="brojcani_unos"
+          /><br />
+        </fieldset>
+      </div>
+
+      <div class="drugi_fieldset">
+        <fieldset name="pozeljni_zanrovi">
+          <legend class="legenda">Poželjni žanrovi</legend>
+          <input
+            type="checkbox"
+            id="rock"
+            name="pozeljni_zanrovi"
+            value="rock"
+            class="cbox_element"
+          />
+          <label for="rock">Rock</label>
+          <input
+            type="checkbox"
+            id="pop"
+            name="pop"
+            value="pop"
+            class="cbox_element"
+          />
+          <label for="pop">Pop</label>
+          <input
+            type="checkbox"
+            id="metal"
+            name="metal"
+            value="metal"
+            class="cbox_element"
+          />
+          <label for="metal">Metal</label>
+          <input
+            type="checkbox"
+            id="punk"
+            name="punk"
+            value="punk"
+            class="cbox_element"
+          />
+          <label for="punk">Punk</label>
+          <br />
+          <br />
+
+          <br />
+          <br />
+
+          <input
+            type="radio"
+            name="iskustvo"
+            id="radio-gumb_0"
+            value="Nemam iskustva u sviranju gitare"
+            required
+            class="radio_btn"
+          />
+          <label for="radio-gumb_0" class="radio_opcija"
+            >Nemam iskustva u sviranju gitare</label
+          >
+
+          <br />
+          <input
+            type="radio"
+            name="iskustvo"
+            value="Imam manje od 1 godine iskustva"
+            class="radio_btn"
+            id="radio-gumb"
+          />
+          <label for="radio-gumb" class="radio_opcija"
+            >Imam manje od 1 godine iskustva</label
+          >
+
+          <br />
+          <input
+            type="radio"
+            name="iskustvo"
+            value="više od 1 godine"
+            class="radio_btn"
+            id="radio-gumb_2"
+          />
+
+          <label for="radio-gumb_2" class="radio_opcija"
+            >Imam više od godinu dana iskustva</label
+          >
+
+          <br />
+          <input
+            type="radio"
+            name="iskustvo"
+            value="Sve znam"
+            class="radio_btn"
+            id="radio-gumb_3"
+          />
+
+          <label for="radio-gumb_3" class="radio_opcija">Sve znam</label>
+
+          <br />
+          <br />
+
+          <label for="nacin_rada"
+            >Odaberite željeni način rada na radionici:</label
+          >
+          <select name="nacin_rada[]" id="nacin_rada" multiple>
+            <optgroup label="Teorijski smjerovi">
+              <option value="Ljestvice i tonaliteti">
+                Ljestvice i tonaliteti
+              </option>
+              <option value="Glazbena razdoblja i njihova obilježja">
+                Glazbena razdoblja i njihova obilježja
+              </option>
+            </optgroup>
+
+            <optgroup label="Praktični smjerovi">
+              <option value="Solaže i dinamika sviranja">
+                Solaže i dinamika sviranja
+              </option>
+              <option value="Primjena teorije u praksi">
+                Primjena teorije u praksi
+              </option>
+              <option value="Ritmičko sviranje">Ritmičko sviranje</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+
+          <label for="datum_vrijeme"
+            >Odaberite odgovarajući termin radionice</label
+          >
+          <br />
+          <input
+            type="text"
+            name="datum_vrijeme"
+            id="datum_vrijeme"
+          />
+          <br />
+          <br />
+
+          <label for="slika">Stavite vlastitu sliku (nije obavezno)</label>
+          <input type="file" name="slika" id="slika" />
+
+          <br /><br />
+        </fieldset>
+      </div>
+    </form>
+
+    <button
+      type="submit"
+      value="Prijavi se na radionicu"
+      class="ne_ispisi"
+      id="submit_gumb"
+      form="obrazac"
+    >
+      Prijavi se na radionicu
+    </button>
+    <button
+      type="reset"
+      value="Ponisti podatke"
+      class="ne_ispisi"
+      id="reset_gumb"
+      form="obrazac"
+    >
+      Poništi podatke
+    </button>
+
+
+
+    <script src="./js/mfriscic20.js"></script>
+  </body>
+</html>

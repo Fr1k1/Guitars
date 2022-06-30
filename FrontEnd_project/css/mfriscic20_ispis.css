@@ -1,0 +1,28 @@
+@media print {
+  header, nav,
+  footer,
+  .izbornik_txt,
+  .video,
+  .zvuk, .ne_ispisi {
+    display: none;
+  }
+
+  .slika,
+  .fgcptn {
+    display: block;
+    width: 100%;
+  }
+
+  body {
+    filter: url("#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  @page {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

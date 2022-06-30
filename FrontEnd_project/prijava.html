@@ -1,0 +1,102 @@
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/mfriscic20.css" />
+
+    <link rel="stylesheet" href="./css/mfriscic20_responzivni_dizajn.css" />
+    <title>Prijava</title>
+  </head>
+
+  
+  <body>
+    <button class="promjena_stila">Promjena stila</button>
+
+    <a href="./index.html" class="nav_element">
+  
+    <br /><br />
+
+
+    <h2 class="izbornik_txt">Izbornik</h2>
+
+    <nav class="nav">
+      <ul class="traka">
+        <li>
+          <a href="./index.html" class="nav_element">Početna stranica</a>
+        </li>
+
+        <li>
+          <a href="./ostalo/kreativna.html" class="nav_element"
+            >Kreativna stranica</a
+          >
+        </li>
+
+        <li>
+          <a href="./ostalo/multimedija.html" class="nav_element"
+            >Stranica za multimediju</a
+          >
+        </li>
+
+        <li>
+          <a href="./ostalo/o_autoru.html" class="nav_element"
+            >Stranica o autoru</a
+          >
+        </li>
+
+        <li><a href="./podaci/popis.html" class="nav_element">Popis</a></li>
+      </ul>
+
+    <header>
+      <a href="prijava.html" class="prijava prijavaTekst">Prijava</a>
+      <a href="" class="odjava">Odjava</a>
+      <div class="cookie_podaci"></div>
+    </header>
+    <form id="obrazac_prijava"  method="GET" action=""
+     novalidate>
+      <label for="korime">Korisničko ime:</label>
+      <input
+        type="text"
+        required
+        id="korime"
+        name="korime"
+        placeholder="Korisničko ime"
+      />
+      <br />
+      <br />
+
+      <label for="lozinka" class="lozinka_klasa">Lozinka:</label>
+      <input
+        type="password"
+        required
+        id="lozinka"
+        name="lozinka"
+        placeholder="Lozinka"
+      />
+      <br><br>
+
+      <label for="vrijeme_trajanja" class="vrijeme_trajanja">Vrijeme trajanja kolačića (s):</label>
+      <input
+        type="text"
+        required
+        id="vrijeme_trajanja"
+        name="vrijeme_trajanja"
+        placeholder="Vrijeme trajanja kolačića (s)"
+      />
+
+    </form>
+
+    <button
+    type="submit"
+    value="Prijavi se"
+    id="submit_prijava"
+    form="obrazac_prijava"
+    class="gumb_prijava"
+  >
+    Prijavi se 
+  </button>
+  
+  </body>
+
+  <script src="./js/mfriscic20.js"></script>
+</html>

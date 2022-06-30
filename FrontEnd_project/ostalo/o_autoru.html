@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="autor" content="Martin Friščić" />
+    <meta name="opis" content="ul, li, nav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mfriscic20.css" />
+    <link rel="stylesheet" href="../css/mfriscic20_responzivni_dizajn.css" />
+    <link rel="icon" type="image/icon" href="/materijali/ikona_stranice.jpg" />
+    <link rel="stylesheet" href="../css/mfriscic20_ispis.css" />
+
+    <title>Stranica autora</title>
+  </head>
+  <body>
+    <header id="zaglavlje">
+      <noscript>Vaš Web preglednik ne podržava JavaScript!</noscript>
+      
+
+      
+
+      <h1>Stranica o autoru</h1>
+      <a href="../index.html" class="nav_element">
+        <img
+          src="../materijali/logo.png"
+          alt="logo stranice"
+          height="100"
+          width="75"
+          id="glavni_logo"
+      /></a>
+
+      <br /><br />
+     
+      <a href="../prijava.html" id="prijava" class="prijavaTekst">Prijava</a>
+      <div class="cookie_podaci"></div>
+      <a href="" class="odjava">Odjava</a>
+      
+      <button class="promjena_stila">Promjena stila</button>
+      <h2 class="izbornik_txt">Izbornik</h2>
+
+      <nav class="nav">
+        <ul class="traka">
+          <li>
+            <a href="../index.html" class="nav_element">Početna stranica</a>
+          </li>
+
+          <li>
+            <a href="../obrazac.html" class="nav_element"
+              >Stranica za obrazac</a
+            >
+          </li>
+
+          <li>
+            <a href="../ostalo/kreativna.html " class="nav_element"
+              >Kreativna stranica</a
+            >
+          </li>
+
+          <li>
+            <a href="../ostalo/multimedija.html" class="nav_element"
+              >Stranica za multimediju</a
+            >
+          </li>
+
+          <li><a href="../podaci/popis.html" class="nav_element">Popis</a></li>
+        </ul>
+      </nav>
+    </header>
+    <ul>
+      <li>Ime i prezime:</li>
+      <li>
+        <h3><u>Martin Friščić</u></h3>
+      </li>
+
+      <li>
+        <u>Entuzijastičan | zabavan | pametan</u>
+      </li>
+
+      <li>
+        <a href="../materijali/vlastita_slika.jpeg">
+          <img
+            src="../materijali/vlastita_slika.jpeg"
+            alt="prikaz vlastite slike"
+            height="400"
+            width="300"
+            class="slika_autora animacija_po_zelji"
+            id="moja_slika"
+        /></a>
+      </li>
+
+      <li>
+        <cite
+          >Web tehnologije me aktivnije zanimaju zadnje 2 godine. Prošao sam
+          tečajeve za FullStack Web development kao i za React (JavaScript
+          framework) jer me iznimno zanima frontend samih stranica. Želim još
+          bolje naučiti Web tehnologije kako bih mogao napraviti stranice koje
+          su potpuno responzivne i imaju dobar raspon boja. Što se tiče
+          NodeJS-a, taj dio je također bio sadržan u tečaju no na to nisam
+          obraćao neku veliku pažnju jer mi je cilj bio prvo naučiti FrontEnd.
+        </cite>
+      </li>
+
+      <li>
+        <input type="range" min="0" max="10" value="9" id="html" name="html" />
+        <label for="html">HTML</label>
+      </li>
+
+      <li>
+        <input type="range" min="0" max="10" value="6" id="css" name="css" />
+        <label for="css">CSS</label>
+        <br />
+      </li>
+
+      <li>
+        <input type="range" min="0" max="10" value="4" id="js" name="js" />
+        <label for="js">JavaScript</label>
+        <br />
+      </li>
+
+      <li>
+        <input type="range" min="0" max="10" value="2" id="node" name="node" />
+        <label for="node">NodeJS</label>
+      </li>
+    </ul>
+
+    <script src="../js/mfriscic20.js"></script>
+  </body>
+</html>
